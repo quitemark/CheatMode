@@ -19,13 +19,13 @@ public class Config {
                    .push(Reference.MOD_ID);
 
             instantCreativeInventory = builder
-                    .comment("Instantly open the creative inventory (true) or open " +
-                            "the survival inventory with a button to open the creative inventory (false)? (default: true)")
+                    .comment("Instantly open the creative inventory (false) or open " +
+                            "the survival inventory with a button to open the creative inventory (true)? (default: true)")
                     .worldRestart()
-                    .define("instant_creative_inventory", true);
+                    .define("instant_creative_inventory", false);
 
             doubleSpeed = builder
-                    .comment("Walk and fly twice as fast? (default: false)")
+                    .comment("Walk and fly twice as fast? (default: true)")
                     .worldRestart()
                     .define("double_speed", false);
 
